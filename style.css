@@ -61,10 +61,6 @@ body {
   filter: invert(1) !important;
 }
 
-.navbar {
-  background-color: var(--darkblue-color) !important;
-}
-
 .navbar-brand img {
   width: 24px;
 }
@@ -317,20 +313,8 @@ section p {
   opacity: 0.9;
 }
 
-
-
+/* For screens smaller than 768px (Tablets and small screens) */
 @media (max-width: 768px) {
-
-  .container,
-  .wrapper {
-    padding: 6%;
-    color: #fff;
-  }
-
-  nav ul li {
-    margin: 0 auto;
-  }
-
   .About {
     flex-direction: column;
     align-items: center;
@@ -343,7 +327,7 @@ section p {
 
   .About .left img {
     height: 250px;
-    /* Adjust the image size */
+    /* Adjust image size */
     margin-right: 0;
   }
 
@@ -376,24 +360,22 @@ section p {
     font-size: 14px;
   }
 
-  .About {
-    gap: 20px;
-  }
-
   .About .left {
-    order: 2;
-    /* Place the text section first */
+    order: 1;
+    /* Place the image below the text */
   }
 
   .About .right {
-    order: 1;
-    /* Ensure the image comes after the text */
+    order: 2;
+    /* Ensure text comes before the image */
   }
 }
 
+/* For screens smaller than 480px (Mobile Devices) */
 @media (max-width: 480px) {
   .About .left img {
     height: 200px;
+
   }
 
   .About .right h1 {
@@ -406,7 +388,7 @@ section p {
   }
 
   .progress-bar {
-    width: 100%;
+    width: 90%;
   }
 
   .progress {
@@ -414,17 +396,8 @@ section p {
   }
 
   .progress-img {
-    left: 95%;
-    /* Adjust progress circle for mobile */
-  }
-
-  .progress-bar {
-    width: 90%;
-  }
-
-  .progress-img {
     left: 85%;
-    /* Adjust for mobile view */
+
   }
 
   h1 {
@@ -447,9 +420,6 @@ section p {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-.Services {
   background-image: url("images/bg-left.png") !important;
   background-position: left bottom 600%;
   background-repeat: no-repeat;
@@ -1008,30 +978,30 @@ footer {
   font-weight: 300;
 }
 
-nav {
+fnav {
   display: flex;
   justify-content: center;
 }
 
-nav ul {
+fnav ul {
   list-style: none;
   padding: 0;
   display: flex;
   gap: 20px;
 }
 
-nav ul li {
+fnav ul li {
   display: inline;
 }
 
-nav ul li a {
+fnav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
 }
 
-nav ul li a:hover {
+fnav ul li a:hover {
   color: var(--red-color);
 }
 
