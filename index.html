@@ -31,14 +31,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto gap-3">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Testimonial</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Service">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Testimonial">Testimonial</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
                 <li class="nav-item">
-                  <a href="#" class="btn btn-danger red ms-lg-2 px-4 rounded-1 py-2 me-3">Download CV</a>
+                  <a href="path-to-your-cv.pdf" download="My_CV.pdf"
+                    class="btn btn-danger red ms-lg-2 px-4 rounded-1 py-2 me-3">Download CV</a>
+
                 </li>
               </ul>
             </div>
@@ -46,7 +48,7 @@
         </nav>
 
         <!-- end of navigation menu  -->
-        <div class="hero-section">
+        <div class="hero-section" id="Home">
 
           <div class="left">
             <h1>Welcome To <span style="color: var(--red-color);">Marslan</span> Where Design Innovates</h1>
@@ -57,7 +59,7 @@
               creativity meets technology, shaping unique and engaging
               experiences.
             </p>
-            <a href="#" class="btn red"> Hire Me</a>
+            <a href="#Contact" class="btn red"> Hire Me</a>
           </div>
           <div class="right">
             <img src="images/hero-image.png" alt="" />
@@ -75,7 +77,7 @@
     </header>
     <!-- End of header section -->
     <div class="wrapper">
-      <section class="About ">
+      <section class="About " id="About">
         <div class="left">
           <img src="images/about-image.png" alt="" />
         </div>
@@ -120,7 +122,7 @@
       </section>
     </div>
     <!-- End of About Section -->
-    <section class="Services">
+    <section class="Services" id="Service">
       <div class="wrapper">
         <div class="desc">
           <h1>Services</h1>
@@ -162,17 +164,17 @@
 
     </section>
     <!-- End of services section -->
-    <section class="Project">
+    <section class="Project " id="Projects">
       <div class="wrapper">
         <div class="desc">
           <h1>My Projects</h1>
           <p>Crafted intuitive interfaces that enhance user experience and drive engagement, with usability in every
             project.</p>
         </div>
-        <div class="projects"><a href="#" class="btn white"> All</a>
-          <a href="#" class="btn red"> Web Design</a>
-          <a href="#" class="btn white "> App Design</a>
-          <a href="#" class="btn white "> Banner </a>
+        <div class="projects"><a href="#Projects" class="btn white"> All</a>
+          <a href="#Projects" class="btn red"> Web Design</a>
+          <a href="#Projects" class="btn white "> App Design</a>
+          <a href="#Projects" class="btn white "> Banner </a>
         </div>
 
         <div class="project-cards">
@@ -202,7 +204,7 @@
     </section>
     <!-- End of project section -->
     <!-- Testimonial Section -->
-    <section class="Testimonial">
+    <section class="Testimonial" id="Testimonial">
       <div class="wrapper">
         <div class="desc">
           <h1>Testimonial</h1>
@@ -256,7 +258,7 @@
 
 
     <!-- End of Testimonial Section -->
-    <section class="Contact">
+    <section class="Contact" id="Contact">
       <div class="wrapper">
         <div class="desc">
           <h1>Let’s Design Together</h1>
@@ -264,7 +266,8 @@
             stand out.</p>
         </div>
         <div class="email"><input type="email" placeholder="Enter Email" class="email-input">
-          <a href="#" class="btn red" style="font-weight: 500;"> Contact Me</a>
+          <a href="#Contact" class="btn red" style="font-weight: 500;"> Contact Me</a>
+
         </div>
 
       </div>
@@ -279,12 +282,12 @@
         <fnav style="display: flex; justify-content: center;">
 
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Testimonial</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Service">Services</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Testimonial">Testimonial</a></li>
+            <li><a href="#Contact">Contact</a></li>
           </ul>
         </fnav>
       </div>
